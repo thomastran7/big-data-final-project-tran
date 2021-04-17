@@ -40,7 +40,20 @@ remover = StopWordsRemover()
 stopwords = remover.getStopWords()
 FranksWordsRDD = FranksCleanTokensRDD.filter(lambda PointLessW: PointLessW not in stopwords)
 ```
-7. This next step isn't necessary, but just in case your data contains any empty elements (' '). To remove any empty elements, we simply just filter out anything that resembles an empty element.
+7. *This next step isn't necessary, but just in case your data contains any empty elements (' '). To remove any empty elements, we simply just filter out anything that resembles an empty element.
 ```
-FranksEmptyRemoveRDD = FranksWordsRDD.filter(lambda x: x!="")
+FranksEmptyRemoveRDD = FranksWordsRDD.filter(lambda x: x != "")
 ```
+
+### Processing the Data
+After we finish up cleaning the data, we move on to proccessing our clean data. </br>
+</br>
+8. To start the process, we will map our words into intermediate key-value pairs. This will look like: (word,1), once we map it.
+```
+IKVPairsRDD = FranksEmptyRemoveRDD.map(lambda word: (word,1))
+```
+9. Next we will transform the pairs into a sort of word count. An example is say the word banana comes up once, this will in turn show up as (banana, 1). If banana shows up again, then it will show as (banana, 2).
+```
+FranksWordCountRDD = IKVPairsRDD.reduceByKey(lambda acc, value: acc + value)
+```
+10. 
