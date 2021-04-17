@@ -1,4 +1,4 @@
 # Big Data Final Project
 
 ## Text Data:
-[The Devil's Dictionary by Ambrose Bierce](https://www.gutenberg.org/cache/epub/972/pg972.txt)
+[Frankenstein; Or, The Modern Prometheus by Mary Wollstonecraft Shelley](https://www.gutenberg.org/cache/epub/42324/pg42324.txt)
