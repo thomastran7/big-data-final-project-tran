@@ -56,4 +56,10 @@ IKVPairsRDD = FranksEmptyRemoveRDD.map(lambda word: (word,1))
 ```
 FranksWordCountRDD = IKVPairsRDD.reduceByKey(lambda acc, value: acc + value)
 ```
-10. 
+10. Finally, we will take our list of words and order them by descending order by using sortByKey. Once they are ordered, we'll take the top 10 of our list, by using take. Finally we will then print our result to see the top 10 most used word in Frankenstein in descending order.
+```
+FranksResults = FranksWordCountRDD.map(lambda x: (x[1], x[0])).sortByKey(False).take(10)
+print(FranksResults)
+```
+
+
