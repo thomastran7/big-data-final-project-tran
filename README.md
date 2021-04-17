@@ -62,4 +62,23 @@ FranksResults = FranksWordCountRDD.map(lambda x: (x[1], x[0])).sortByKey(False).
 print(FranksResults)
 ```
 
+### Charting the Results
+11. To visualize our results, we will use Pandas, MatPlotLib, and Seaborn.
+```
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+source = 'Frankenstein; Or, The Modern Prometheus'
+title = 'Top Words in ' + source
+xlabel = 'Count'
+ylabel = 'Words'
+
+df = pd.DataFrame.from_records(FranksResults, columns =[xlabel, ylabel]) 
+plt.figure(figsize=(10,3))
+sns.barplot(xlabel, ylabel, data=df, palette="Greens_d").set_title(title)
+```
+
+### Outcome
+
 
