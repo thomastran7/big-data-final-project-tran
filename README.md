@@ -1,7 +1,7 @@
 # Big Data Final Project
 
 ## Text Data:
-[Frankenstein; Or, The Modern Prometheus by Mary Wollstonecraft Shelley](https://www.gutenberg.org/cache/epub/42324/pg42324.txt)
+[*Frankenstein; Or, The Modern Prometheus* by Mary Wollstonecraft Shelley](https://www.gutenberg.org/cache/epub/42324/pg42324.txt)
 
 ## The Process:
 
@@ -80,5 +80,12 @@ sns.barplot(xlabel, ylabel, data=df, palette="Greens_d").set_title(title)
 ```
 
 ### Outcome
+![](images/top10.PNG)
+![](images/barplot.png)
+As shown above the top 10 words used in *Frankenstein; Or, The Modern Prometheus* by Mary Wollstonecraft Shelley are: one, yet, upon, man, life, every, may, father, first, and shall.
+From this outcome, we can assume that Frankenstein is about a single person that once had a life as a man and a father. 
 
-
+## References
+* [Databricks: Word Count RDD](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/4574377819293972/2246755934805346/3186223000943570/latest.html)
+* [Google: Python Regular Expressions](https://developers.google.com/edu/python/regular-expressions)
+* [Stack Overflow: reduceByKey and top frequent words](https://stackoverflow.com/questions/59240504/spark-python-reducebykey-then-find-top-10-most-frequent-words-and-frequencies)
