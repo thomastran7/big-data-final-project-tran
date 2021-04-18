@@ -3,6 +3,10 @@
 ## Text Data:
 [*Frankenstein; Or, The Modern Prometheus* by Mary Wollstonecraft Shelley](https://www.gutenberg.org/cache/epub/42324/pg42324.txt)
 
+## Tools / Languages:
+Language: Python
+Tools: Databricks Notebook, Pyspark, Regex, Pandas, MatPlotLib, Seaborn, Urllib
+
 ## The Process:
 
 ### Gathering Data
