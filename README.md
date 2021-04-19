@@ -88,7 +88,7 @@ sns.barplot(xlabel, ylabel, data=df, palette="Greens_d").set_title(title)
 
 ### Outcome
 ![](images/top10.PNG)
-![](images/barplot.png)
+![](images/barplot.png)</br>
 As shown above the top 10 words used in *Frankenstein; Or, The Modern Prometheus* by Mary Wollstonecraft Shelley are: one, yet, upon, man, life, every, may, father, first, and shall.
 From this outcome, we can assume that Frankenstein is about a single person that once had a life as a man and a father. 
 
